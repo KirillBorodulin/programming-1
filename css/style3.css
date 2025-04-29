@@ -1,0 +1,19 @@
+.test-text {
+    background-color: rgb(75, 201, 218);
+    color: blue;
+    border: 2px blue solid;
+}
+.block{
+    background-color: bisque;
+    width: 200px;
+    height: 400px;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50% ;
+    border: 3px black solid;
+    transition: background 0.5s ease-in-out; 
+
+    animation: 5s ease-out infinite;
+}

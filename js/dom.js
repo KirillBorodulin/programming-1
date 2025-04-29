@@ -38,7 +38,7 @@ console.log(menu.classList.contains("border"));//проверить есть л�
 
 /* 5. Работа с атрибутами  */
 const firstLink = document.querySelector(".menu li:first-child a");
-console.log(firstLink.getAttribute("href"));//узнвть значение атребутов type href style и др
+console.log(firstLink.getAttribute("href"));//узнать значение атрибутов type href style и др
 firstLink.setAttribute("href","https://midis.ru/");//замена ссылки на новую  новый атрибут
 firstLink.setAttribute("target","_blank");//открытие в соседней вкладочке
 //firstLink.removeAttribute("target");  //удалить

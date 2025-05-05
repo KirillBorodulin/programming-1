@@ -23,8 +23,33 @@ firstLink.setAttribute("target","_blank");
 
 
 
-const btn1 = document.getElementById("btn1");
-const circle = document.querySelector(".circle");
-btn1.addEventListener("click",function(){
-    circle.style.background = "red";
-})
+
+// const circle22 = document.getElementById('circle22');
+// const block = document.getElementById('block');
+// const btn1 = document.getElementById('btn1');
+
+// btn1.addEventListener("click",function(){
+//     let position = 0;
+//     const maxPosition = block.clientHeight - circle22.clientHeight  ;
+// })
+// console.log(block.clientHeight , circle22.clientHeight );
+
+
+const circle22 = document.getElementById('circle22');
+const block = document.getElementById('block');
+const btn1 = document.getElementById('btn1');
+
+btn1.addEventListener('click', () => {
+    let position = 0;
+    const maxPosition = block.clientHeight - circle22.clientHeight;
+
+    function animate() {
+      if (position < maxPosition) {
+        position += 2;
+        circle22.style.bottom = position + 'px';
+        circle22.animationFrameId = requestAnimationFrame(animate);
+      }
+    }
+
+    animate();
+  });

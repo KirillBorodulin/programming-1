@@ -3,7 +3,7 @@
     color: blue;
     border: 2px blue solid;
 }
-.block{
+/* .block{
     background-color: bisque;
     width: 200px;
     height: 400px;
@@ -14,6 +14,27 @@
     border-radius: 50% ;
     border: 3px black solid;
     transition: background 0.5s ease-in-out; 
+    transform: translateX(50%);
+    position: absolute;
 
     animation: 5s ease-out infinite;
+} */
+.circle {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-55%);
+    width: 70px;
+    height: 70px;
+    background-color: rgb(255, 22, 22);
+    border-radius: 50%;
+    border: black solid;
 }
+.block1 {
+    position: relative;
+    width: 200px;
+    height: 240px;
+    background-color: rgb(231, 182, 46);
+    overflow: hidden;
+}
+

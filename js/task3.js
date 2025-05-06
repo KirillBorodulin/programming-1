@@ -24,17 +24,6 @@ firstLink.setAttribute("target","_blank");
 
 
 
-// const circle22 = document.getElementById('circle22');
-// const block = document.getElementById('block');
-// const btn1 = document.getElementById('btn1');
-
-// btn1.addEventListener("click",function(){
-//     let position = 0;
-//     const maxPosition = block.clientHeight - circle22.clientHeight  ;
-// })
-// console.log(block.clientHeight , circle22.clientHeight );
-
-
 const circle22 = document.getElementById('circle22');
 const block = document.getElementById('block');
 const btn1 = document.getElementById('btn1');
@@ -45,7 +34,7 @@ btn1.addEventListener('click', () => {
 
     function animate() {
       if (position < maxPosition) {
-        position += 2;
+        position += 3;
         circle22.style.bottom = position + 'px';
         circle22.animationFrameId = requestAnimationFrame(animate);
       }

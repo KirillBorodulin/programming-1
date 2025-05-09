@@ -69,3 +69,10 @@ btn2.addEventListener("click" , function(){
     }    
 })
 /*----------------------btn3----------------------------*/
+const btn3 = document.getElementById("btn3");
+btn3.addEventListener("click" , function(){
+    let newTasks = [...tasks];
+    newTasks = ;
+    container.innerHTML = " " ;
+       
+})

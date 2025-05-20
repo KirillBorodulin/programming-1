@@ -1,0 +1,31 @@
+.tooltip{
+    position: relative;
+    cursor: pointer;
+    color: blueviolet;
+    text-decoration: underline;
+}
+.tooltip:hover,
+.tooltip:focus{
+    position: relative;
+    cursor: pointer;
+    color: green;
+    text-decoration: underline;
+}
+.tooltip::after{
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    max-width: 200px;
+    padding: 10px;
+    background-color: rgb(67, 67, 223);
+    color: white;
+    pointer-events: none;
+    opacity: 0;
+    transition: transform 0.2s ease-in-out,opacity 0.2s ease-in-out;
+}
+.tooltip-animated::after{
+    transform: translatey(100%);
+    opacity: 1;
+}

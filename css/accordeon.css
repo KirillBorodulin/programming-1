@@ -1,4 +1,4 @@
-.accordeon__qustion {
+.accordeon__question {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -10,7 +10,7 @@
     cursor: pointer;
     font-size: 18px;
 }
-.accordeon__qustion::after{
+.accordeon__question::after{
     content: '\25BC';
     font-size: 14px;
     transition: transform 0.3s ease;
@@ -24,7 +24,7 @@
     max-height 0.3s ease;
     opacity: 0;
 }
-.accordeon__qustion--active::after{
+.accordeon__question--active::after{
     transform: rotate(180deg);
     transition: transform 0.3s ease;
 }
